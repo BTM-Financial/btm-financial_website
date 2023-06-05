@@ -1,0 +1,693 @@
+body{margin:0;font-size: 20px;font-family: 'twentieth_century_light';font-style: normal;font-weight: normal;color:#000000;line-height: 1.35em;}
+.row-eq-height {display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;}
+.clearfix, .cl { clear: both; height: 0px; visibility: hidden; }
+.ds-vertical-align { display: flex; flex-direction: column; justify-content: center;} 
+img { max-width: 100%; height: auto;}
+
+::-moz-selection { background: #40a878; color: #ffffff }
+::selection { background: #40a878; color: #ffffff }
+*after,*before{clear:both}
+@font-face{font-family:'Twentieth Century MT Medium Condensed';font-style:normal;font-weight:normal;src:local('Twentieth Century MT Medium Condensed'),url('../fonts/Twentieth Century MT Medium Condensed.woff') format("woff")}
+@font-face{font-family:'Twentieth Century MT Medium Italic';font-style:normal;font-weight:normal;src:local('Twentieth Century MT Medium Italic'),url('../fonts/Twentieth Century MT Medium Italic.woff') format("woff")}
+@font-face{font-family:'Twentieth Century MT Medium';font-style:normal;font-weight:normal;src:local('Twentieth Century MT Medium'),url('../fonts/Twentieth Century MT Medium.woff') format("woff")}
+@font-face{font-family:'Twentieth Century MT Light Italic';font-style:normal;font-weight:normal;src:local('Twentieth Century MT Light Italic'),url('../fonts/Twentieth Century MT Light Italic.woff') format("woff")}
+@font-face{font-family:'twentieth_century_light';font-style:normal;font-weight:normal;src:local('Twentieth Century MT Light'),url(../fonts/twentieth_century_light.woff) format("woff")}
+@font-face{font-family:'Twentieth Century MT Semi Medium';font-style:normal;font-weight:normal;src:local('Twentieth Century MT Semi Medium'),url('../fonts/Twentieth Century MT Semi Medium.woff') format("woff")}
+@font-face{font-family:'Twentieth Century MT Semi Bold';font-style:normal;font-weight:normal;src:local('Twentieth Century MT Semi Bold'),url('../fonts/Twentieth Century MT Semi Bold.woff') format("woff")}
+@font-face{font-family:'Twentieth Century MT Bold Condensed';font-style:normal;font-weight:normal;src:local('Twentieth Century MT Bold Condensed'),url('../fonts/Twentieth Century MT Bold Condensed.woff') format("woff")}
+@font-face{font-family:'Twentieth Century MT Bold Italic';font-style:normal;font-weight:normal;src:local('Twentieth Century MT Bold Italic'),url('../fonts/Twentieth Century MT Bold Italic.woff') format("woff")}
+@font-face{font-family:'Twentieth Century MT Bold';font-style:normal;font-weight:normal;src:local('Twentieth Century MT Bold'),url('../fonts/Twentieth Century MT Bold.woff') format("woff")}
+@font-face{font-family:'Twentieth Century MT Extra Bold Condensed';font-style:normal;font-weight:normal;src:local('Twentieth Century MT Extra Bold Condensed'),url('../fonts/Twentieth Century MT Extra Bold Condensed.woff') format("woff")}
+@font-face{font-family:'Twentieth Century MT Extra Bold Italic';font-style:normal;font-weight:normal;src:local('Twentieth Century MT Extra Bold Italic'),url('../fonts/Twentieth Century MT Extra Bold Italic.woff') format("woff")}
+@font-face{font-family:'Twentieth Century MT Extra Bold';font-style:normal;font-weight:normal;src:local('Twentieth Century MT Extra Bold'),url('../fonts/Twentieth Century MT Extra Bold.woff') format("woff")}
+@font-face{font-family:'Twentieth Century MT Ultra Bold Condensed';font-style:normal;font-weight:normal;src:local('Twentieth Century MT Ultra Bold Condensed'),url('../fonts/Twentieth Century MT Ultra Bold Condensed.woff') format("woff")}
+@font-face{font-family:'Twentieth Century MT Ultra Bold Italic';font-style:normal;font-weight:normal;src:local('Twentieth Century MT Ultra Bold Italic'),url('../fonts/Twentieth Century MT Ultra Bold Italic.woff') format("woff")}
+@font-face{font-family:'Twentieth Century MT Ultra Bold';font-style:normal;font-weight:normal;src:local('Twentieth Century MT Ultra Bold'),url('../fonts/Twentieth Century MT Ultra Bold.woff') format("woff")}
+a:hover {
+    color: #1a7e43;
+}
+.inner_page_banner{background-repeat:no-repeat;background-position:top center;background-color:#062039}
+.inner_page_banner .banner-height{height:62vh}
+.inner_page_banner .banner-height h1{font-family:'Twentieth Century MT Medium';color:#ffffff;font-size: 2.4em;text-shadow:none;}
+.inner_page_banner .banner-height h5 {background-color: #737373;color: #ffffff;display: inline-block;padding: 6px 15px;border-radius: 2px;text-transform: uppercase;font-size: 16px;letter-spacing: 2px;}
+
+.inner_page_container h2 {font-family: 'Twentieth Century MT Semi Medium';font-size: 1.72em;color: #231f20;}
+.inner_page_container .row {background-color:#ffffff; margin-bottom:26px; padding:40px;}
+.inner_page_container .row .row { padding: 0px; }
+.inner_page_container .row:nth-last-child(1) { margin-bottom: 0px; }
+.heading{display:block;position:relative;float:left;clear:both;margin-bottom:0}
+.heading .spectrum-lines{font-size:3.5em;letter-spacing:-.2vw;line-height:1em;margin-bottom:40px;display:block;font-family:'Twentieth Century MT Extra Bold'}
+.heading .spectrum-lines span{left:auto}
+.heading-wrap .heading .spectrum-lines{font-family:"averta","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:90px;letter-spacing:-.15vw;line-height:100%;font-weight:900;margin-bottom:40px}
+.heading .spectrum-lines span{display:block;position:relative;float:left;clear:both;background-image:url(../images/spectrum.svg);white-space:nowrap;background-repeat:repeat-x;background-size: 80vw 33vh;padding-bottom:.1em;line-height:.78em;margin-bottom:16px;}
+.heading .spectrum-lines span:before{display:block;position:absolute;top:-10px;left:-60px;width:calc(100% + 120px);height:calc(100% + 20px);background-color:#fff;z-index:-1}
+.heading .spectrum-lines span:after{content:'';position:relative;display:inline-block;position:relative;display:inline-block}
+.bg-wrap{position:relative;height:100%;overflow:hidden}
+.bg-container{height:calc(100% + 80px)!important;top:-70px!important;display:block;position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden}
+.bg-container video{display:block;position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+
+.bar_seprator{position:relative;z-index:1;background: #30ad6b;width: 76px;height: 3px;margin-top: 0px;transition:.5s;margin-bottom:20px;}
+.bar_seprator::before{right:20px}
+.bar_seprator::after{right:10px}
+.bar_seprator::after,.bar_seprator::before{content:"";position:absolute;height:100%;width: 4px;top:0;background:#fff;transition:.5s;}
+
+.whychooseus-img-wrpapper { margin-bottom: 20px; }
+.whychooseus-img-wrpapper img { height: 72px;   display: block;}
+/*#thumbs .item li span br{display:none;}*/
+#institutional-investors img{
+    max-height:100%;
+}
+.container{max-width: 1360px;}
+
+.navbar-expand-lg .navbar-nav .nav-link{color:#171314;font-size:20px;padding:0 35px;font-family:'Twentieth Century MT Semi Medium';font-style:normal;font-weight:normal;position:relative}
+.header{background-color:#ffffff;position:relative; -webkit-transition: all 0.5s ease;-moz-transition: position 10s;-ms-transition: position 10s;-o-transition: position 10s; transition: all 0.5s ease;}
+@keyframes smoothScroll {0% {transform: translateY(-40px);}100% {transform: translateY(0px);}}
+
+
+.navbar-expand-lg .navbar-nav{width:100%;justify-content:center}
+.navbar-expand-lg .navbar-nav .active{position:relative}
+.navbar-expand-lg .navbar-nav .nav-link:after{
+      content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+    -webkit-transition: width .5s ease, background-color .5s ease;
+    -moz-transition: width .5s ease, background-color .5s ease;
+    margin: auto;
+}
+ .navbar-expand-lg .navbar-nav .nav-link:hover:after{
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(0, 149, 81) 100%);
+    width: 100%;
+}
+.dropdown-toggle::after {position: absolute; top: 10px;}
+
+
+.dropdown-toggle::after {
+    position: static;
+    margin-left: 5px;
+   font-family:"Font Awesome 5 Pro";
+    content: '\f107';
+    font-size: 14px;
+    vertical-align: middle;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border:none !important;
+}
+button#search {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+    align-items: center;
+    border-bottom:1px solid  #fff;
+    transition:all 0.3s ease;
+}
+button#search span{
+    padding-left: 10px;
+}
+button#search:hover{
+    border-bottom:1px solid  #008730;
+}
+.job-requirement span {
+    font-family: 'Twentieth Century MT Semi Medium';
+    margin-right: 5px;
+}
+nav.navbar li.dropdown:hover ul.dropdown-menu{display:block;top: 40px;width: 100%;min-width: max-content;}
+.nav-item{position:relative;transition:all 200ms linear}
+nav.navbar li.dropdown:hover .dropdown-menu{opacity:19999999999999;visibility:visible;max-height:1.0E+15px;transform:translate3d(0,0px,0);background-color:#fff;border-radius:15px;border: 1px solid #cccccc29;}
+.nav-item .dropdown-menu{transform:translate3d(0px,10px,0px);visibility:hidden;opacity:0;max-height:0;display:block;padding:0;margin:0;transition:all 200ms linear 0}
+.dropdown-menu{padding:10px!important;margin:0;font-size:13px;letter-spacing:1px;color:#212121;background-color:#fff;border:none;border-radius:3px;box-shadow:0 5px 10px 0 rgba(138,155,165,0.15);transition:all 200ms linear}
+.dropdown-item{padding:3px 15px;border-radius:2px;transition:all 200ms linear;font-size: 18px;letter-spacing:0;}
+.dropdown-item:hover, .dropdown-item:focus {color: #009345;background-color: #fff;}
+.job-form input{margin-bottom:20px;}
+
+@media (max-width: 767px) {
+.navbar-expand-lg .navbar-nav .nav-link:before{display:none}
+.nav-item::before{position:absolute;display:block;top:15px;left:0;width:11px;height:1px;content:"";border:none;background-color:#000;vertical-align:0}
+.dropdown-toggle::after{position:absolute;display:block;top: 6px;left: -5px;width:1px;height:11px;content:"";border:none;background-color:#000;vertical-align:0;transition:all 200ms linear;}
+.dropdown-toggle[aria-expanded="true"]::after{transform:rotate(90deg);opacity:0}
+.dropdown-menu{padding:0!important;background-color:transparent;box-shadow:none;transition:all 200ms linear}
+.dropdown-toggle[aria-expanded="true"] + .dropdown-menu{margin-top:10px!important;margin-bottom:20px!important}
+body.dark .nav-item::before{background-color:#fff}
+body.dark .dropdown-toggle::after{background-color:#fff}
+body.dark .dropdown-menu{background-color:transparent;box-shadow:none}
+}
+
+.modal { z-index: 99999999999 }
+.modal-dialog {
+    max-width:900px;
+}
+
+.pop-up-form input { margin-bottom:16px; }
+.pop-up-form textarea { margin-bottom:16px; height: 100px; }
+ .card {
+     background: #222222;
+     border-radius: 11px !important;
+     width:90%;
+     max-width: 800px;
+     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5)
+ }
+
+ .card-header {
+     border: 0;
+     border-radius: 11px !important
+ }
+
+
+
+
+ .card-header {
+     background: #222222 !important;
+     position: relative
+ }
+
+
+ .card-body {
+     border-radius: 9px !important
+ }
+
+ .card-1 {
+     color: #A4EAC0 !important
+ }
+
+ .cross {
+     cursor: pointer;
+     width: 45px !important
+ }
+
+ .modal {
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7dc7, #11998ee6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7dc7, #11998ee6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+
+ .modal-content {
+     background: transparent !important
+ }
+
+
+.technology_block ul { display: block; margin: 0px; padding: 0px }
+.technology_block ul li {display: inline-block;background-color: #efefef;padding: 5px 16px;margin-bottom: 5px;font-size: 17px;}
+.technology_block .col-block {padding: 12px 14px;border: 1px solid #d6d2d2;height: 100%;font-size: 19px;}
+.technology_block .col-block h3 {margin-bottom: 14px;font-family:'Twentieth Century MT Semi Bold';font-size: 1.2em;}
+
+.three-column-grid .three-column-grid-inner { background-color: #f9fafc; padding: 1.5rem; height: 100%;}
+.three-column-grid .three-column-grid-inner h3 {color: #333; font-family:'Twentieth Century MT Semi Medium';}
+.three-column-grid .three-column-grid-inner figure svg { width: auto; height:70px; }
+.three-column-grid .three-column-grid-inner figure svg {fill: #009247;}
+
+.contact_page_form .row { background-color: transparent !important; }
+.contact_page_form input, .contact_page_form select, .contact_page_form textarea {padding: 13px;font-size: 20px;}
+.contact_page_form .submit-bt { padding: 11px 55px;font-size: 21px;}
+
+.contact_info {transform: translateY(-12%);background: #fff;-webkit-box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);transform: translate(14%, 0%);}
+.contact_info .contact_block a  {font-size: 1.0em;color: #000000;text-decoration: none;margin-top: 4px;display: block;font-family: 'Twentieth Century MT Semi Medium';}
+
+.half_divider {width: 60px;border-bottom: 3px solid #00000036; margin-bottom: 15px;}
+.social{margin:0;padding:0}
+.social ul{margin:0;padding:5px}
+.social ul li{margin:5px;list-style:none outside none;display:inline-block}
+.social i{font-family: "Font Awesome 5 Brands";width:40px;height:40px;color:#FFF;background-color:#909AA0;font-size: 18px;text-align:center;padding-top: 11px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;-o-border-radius:50%;transition:all ease .3s;-moz-transition:all ease .3s;-webkit-transition:all ease .3s;-o-transition:all ease .3s;-ms-transition:all ease .3s;}
+.social i:hover{color:#FFF;text-decoration:none;transition:all ease .3s;-moz-transition:all ease .3s;-webkit-transition:all ease .3s;-o-transition:all ease .3s;-ms-transition:all ease .3s}
+.social .fa-facebook:hover{background:#4060A5}
+.social .fa-twitter:hover{background:#00ABE3}
+.social .fa-linkedin:hover{background:#0094BC}
+.social .fa-instagram:hover{background:#375989}
+.social .fa-youtube:hover {  background: #FF1F25;}
+.social .fa-instagram:hover { background: #375989;}
+.playfair_font {font-family: 'Playfair Display', serif;}
+
+
+.footer_info .address .flag {width: 26px;margin-bottom: 0px;margin-right: 13px;height: 21px;}
+
+.contact_block h4 img {width: 34px;margin-right: 10px;}
+p.career-text {
+    color: #231f20;
+    font-size: 22px;
+    font-family: 'Twentieth Century MT Semi Medium';
+    line-height: 1.5;
+}
+.job-list .job-container {
+    margin-top: 20px;
+    padding: 20px 20px 30px;
+    border: 1px solid #cccccc40;
+    box-shadow: 0px 0 8px #dddddd4d;
+    transition: all 0.5s ease;
+}
+.job-list  ul{
+    margin: 0;
+    padding: 0;
+}
+.job-list  ul li{list-style-type: none;}
+
+.location {
+    color: #00873c;
+    font-weight: normal!important;
+        margin-bottom: 10px;
+    display: block;
+}
+.job-list .service_btn{
+    padding: 8px 20px;
+    margin-top: 10px;
+}
+.job-list h3{
+       font-family: 'Twentieth Century MT Semi Medium';
+}
+.job-list .job-container:hover{
+    border: 1px solid #209b5c;
+}
+.job-description{
+    overflow: hidden;
+    border: 1px solid #e9e9e9;
+    padding: 15px 15px 0;
+    background-color: #f9f9f9;
+}
+.job-list h4 {
+    font-family: 'Twentieth Century MT Semi Medium';    
+}
+/*
+svg path,svg polygon{fill-opacity:0;fill:#009247!important;stroke:#009247;stroke-width:2;stroke-dasharray:3319;stroke-dashoffset:3319;animation-name:draw;animation-duration:5s;animation-iteration-count:1;animation-fill-mode:forwards;animation-timing-function:linear}
+svg #Shadows__x28_positive_x29_ path,svg #Shadows__x28_positive_x29_ polygon{animation-delay:4s}
+@keyframes draw {
+90%{stroke-dashoffset:0;stroke-width:2;fill-opacity:0}
+100%{stroke-width:0;fill-opacity:1}
+}*/
+
+.team_container { position: relative; }
+.og-grid{list-style:none;padding:20px 0;margin:0 auto;text-align:center;width:100%}
+.og-grid li {overflow:hidden; display:inline-block;margin:10px 5px 0;vertical-align:top;width: 32.3%;border: 1px solid #999; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease;}
+.og-grid li:nth-child(3n+3) { margin-right: 0px; }
+.og-grid li:hover { cursor: pointer; }
+.og-grid li h4 {-webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease;font-family:'Twentieth Century MT Extra Bold';color: #000000;text-decoration: none;text-align: left;margin-bottom: 0px;font-size: 1.2em;margin-top: 10px;text-indent: 15px;}
+.og-grid li:hover h4, .og-grid li:hover h6 {color: #3eb97a;}
+.og-grid li img {-webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease;}
+.og-grid li:hover img { transform: scale(1.05); }
+.og-grid li h6 {font-family:'Twentieth Century MT Semi Bold';text-align: left;color: #000;font-size:21px;text-indent: 15px; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease;}
+.og-grid li > a,.og-grid li > a img{border:none;outline:none;display:block;position:relative;width:100%;height:auto;text-decoration: none;}
+.og-grid li.og-expanded > a::after{top:auto;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;border-bottom-color: #f5f5f5;border-width:15px;left:50%;margin:-20px 0 0 -15px;}
+.og-expander{position:absolute;background: #f5f5f5;top:auto;left:0;width:100%;margin-top:10px;text-align:left;height:0;overflow:hidden;}
+.og-expander-inner{padding:50px 30px;height:100%}
+.og-close{position:absolute;width:40px;height:40px;top:20px;right:20px;cursor:pointer;border: 1px solid #000;}
+.og-close::before,.og-close::after{content:'';position:absolute;width:100%;top:50%;height:1px;background:#888;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg)}
+.og-close::after{-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg)}
+.og-close:hover::before,.og-close:hover::after{background:#333}
+.og-fullimg {width:35%;float:left;height:100%;overflow:hidden;position:relative}
+.og-details{width:65%;float:left;height:100%;overflow:hidden;position:relative}
+
+
+.og-details{padding:0 40px 0 20px}
+.og-fullimg{text-align:center}
+.og-fullimg img{display:inline-block;max-height:100%;max-width:100%;/* box-shadow: 1px 1px 10px 0px #000; */border: 1px solid #000;float: left;}
+.og-details h3{font-weight:300;font-size:52px;padding:40px 0 10px;margin-bottom:10px}
+.og-details p{font-weight:400;font-size: 20px;line-height: 28px;color: #000;}
+.og-details a{font-weight:700;font-size:16px;color:#333;text-transform:uppercase;letter-spacing:2px;padding:10px 20px;border:3px solid #333;display:inline-block;margin:30px 0 0;outline:none;display: none;}
+.og-details a::before{content:'\2192';display:inline-block;margin-right:10px}
+.og-details a:hover{border-color:#999;color:#999}
+.og-loading{width:20px;height:20px;border-radius:50%;background:#ddd;box-shadow:0 0 1px #ccc,15px 30px 1px #ccc,-15px 30px 1px #ccc;position:absolute;top:50%;left:50%;margin:-25px 0 0 -25px;-webkit-animation:loader .5s infinite ease-in-out both;-moz-animation:loader .5s infinite ease-in-out both;animation:loader .5s infinite ease-in-out both}
+@-webkit-keyframes loader {
+0%{background:#ddd}
+33%{background:#ccc;box-shadow:0 0 1px #ccc,15px 30px 1px #ccc,-15px 30px 1px #ddd}
+66%{background:#ccc;box-shadow:0 0 1px #ccc,15px 30px 1px #ddd,-15px 30px 1px #ccc}
+}
+@-moz-keyframes loader {
+0%{background:#ddd}
+33%{background:#ccc;box-shadow:0 0 1px #ccc,15px 30px 1px #ccc,-15px 30px 1px #ddd}
+66%{background:#ccc;box-shadow:0 0 1px #ccc,15px 30px 1px #ddd,-15px 30px 1px #ccc}
+}
+@keyframes loader {
+0%{background:#ddd}
+33%{background:#ccc;box-shadow:0 0 1px #ccc,15px 30px 1px #ccc,-15px 30px 1px #ddd}
+66%{background:#ccc;box-shadow:0 0 1px #ccc,15px 30px 1px #ddd,-15px 30px 1px #ccc}
+}
+@media screen and (max-width: 830px) {
+.og-expander h3{font-size:32px}
+.og-expander p{font-size:13px}
+.og-expander a{font-size:12px}
+}
+@media screen and (max-width: 650px) {
+.og-fullimg{display:none}
+.og-details{float:none;width:100%}
+}
+
+
+
+.fixed-header{animation: smoothScroll 1s forwards; position:fixed;top:0;left:0;width:100%;z-index:99999999999999;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-ms-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease;box-shadow:0 5px 16px 0 #0000001a}
+.progress-wrap{position:fixed;right:30px;bottom:30px;height:46px;width:46px;cursor:pointer;display:block;border-radius:50px;box-shadow: inset 0 0 0 2px rgb(255 255 255 / 49%);z-index:10000;opacity:0;visibility:hidden;transform:translateY(15px);-webkit-transition:all 200ms linear;transition:all 200ms linear;}
+.progress-wrap.active-progress{opacity:1;visibility:visible;transform:translateY(0)}
+.progress-wrap::after{position:absolute;font-family:'unicons';content:'\e84b';text-align:center;line-height:46px;font-size:24px;color: rgb(142 142 142);left:0;top:0;height:46px;width:46px;cursor:pointer;display:block;z-index:1;-webkit-transition:all 200ms linear;transition:all 200ms linear;}
+.progress-wrap:hover::after{opacity:0}
+.progress-wrap::before{position:absolute;font-family:'unicons';content:'\e84b';text-align:center;line-height:46px;font-size:24px;opacity:0;background: #8e8e8ea6;-webkit-background-clip:text;-webkit-text-fill-color: #000000;left:0;top:0;height:46px;width:46px;cursor:pointer;display:block;z-index:2;-webkit-transition:all 200ms linear;transition:all 200ms linear;}
+.progress-wrap:hover::before{opacity:1}
+.progress-wrap svg path{fill:none}
+.progress-wrap svg.progress-circle path{stroke: rgb(169 169 169);stroke-width:4;box-sizing:border-box;-webkit-transition:all 200ms linear;transition:all 200ms linear;}
+
+
+
+
+.contact-info p{color:#8696ab;font-size:22px;font-family:'Twentieth Century MT Semi Medium';font-weight:normal;margin-bottom:0}
+.contact-info span{color:#8d8ea3}
+.contact-info a{color:#171314;letter-spacing:1px;border-bottom:1px dashed #171314;text-decoration:none}
+.vertical_align{display:flex;align-items:center}
+.Banner h3{font-size:45px;font-family:'Twentieth Century MT Semi Bold';}
+.Banner p{font-size:25px;font-family:'Twentieth Century MT Semi Medium'}
+.white_btn,.transparent_btn{font-size: 20px;background-color:#fff;color:#383a3b;text-decoration:none;display:inline-block;padding: 8px 26px;border:2px solid #fff;margin-bottom:30px;margin-right:25px;cursor: pointer;}
+.transparent_btn{background-color:transparent;color:#fff;position:relative;cursor: pointer;}
+
+.Banner a.transparent_btn:hover { background-color: #ffffff; color: #000000 }
+.Banner .white_btn:hover {background-image: linear-gradient(45deg,#35c39f,#11998e); color: #fff;}
+
+.button-section span{width:20px;height:2px;margin-right:20px;background:white;position:relative;top:-5px;display:inline-block}
+.carousel-item{position:relative}
+.carousel-item:before{position:absolute;background:rgb(0,0,0);background:linear-gradient(0deg,rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%,rgba(0,0,0,1) 100%);height:100%;width:100%;content:''}
+.about_section{background-image:url(../images/about_bg.jpg);padding: 64px 35px;}
+.about_section .about_img img{width:100%}
+.about_content h3{font-family:'Twentieth Century MT Bold';font-style:normal;font-weight:normal;font-size:35px;color:#231f20}
+.about_content p{padding:25px 38px 38px 0}
+.about_content p,.why_us p{font-size:22px;font-family:'twentieth_century_light';font-style:normal;font-weight:normal;margin-bottom:0;color:#282828}
+.read_more_btn{position:relative;color:#000000;font-size:20px;font-family:'Twentieth Century MT Medium';font-style:normal;font-weight:normal;padding-left:20px}
+.read_more_btn:before{position:absolute;content:url(../images/ellipse.png);left:0;top:-10px}
+.why_us .container{margin-top:-145px;background-color:#f9f9f9;padding:45px 25px 35px 55px}
+.why_us_content h3{color:#231f20;font-size: 43px;font-family:'Twentieth Century MT Bold';}
+.why_us_content h3 span{font-family:'Twentieth Century MT Medium'}
+.green-color{color:#24a057}
+.why_us p:first-child{margin-bottom:40px}
+.services{padding: 50px 0 0px;text-align:center;}
+.services h3{color:#231f20;font-size:40px;text-align:center;font-family:'Twentieth Century MT Bold';margin-bottom:0}
+.services h4{font-family:'Twentieth Century MT Semi Medium';color:#000000;font-size:35px}
+.Technology_section{padding-top:95px;/* border-top:1px solid #d9d9d9 */}
+.Technology_section h2{color:#27a159;font-size:40px;font-family:'Twentieth Century MT Bold'}
+.Technology_section h3{font-family:'Twentieth Century MT Semi Medium';color:#323232;font-size:24px}
+.technology_buttons a img{width:36px;margin-right:5px}
+.technology_buttons a{font-family:'Twentieth Century MT Semi Medium';border: 2px solid #09af69;padding: 8px 15px;display:inline-block;color:#383a3b;font-size:20px;text-decoration:none;margin:30px 30px 40px;cursor: pointer;line-height: 34px;}
+.shape{position:relative}
+.bottom{background:#434956}
+.footer .container{max-width:1490px;padding: 74px 0;}
+.footer .bottom .container{max-width:1650px;padding-top:24px;padding-bottom:24px}
+.shape:after{position:absolute;content:url('../images/right-shape.png');right:0;bottom: -13px;   z-index: -1;}
+.shape:before{position:absolute;content:url('../images/left-shape.png');left:0;bottom: -13px;display: block;     z-index: -1;}
+.footer h3{font-family:'Twentieth Century MT Bold';font-size:20px;color:#000;min-height:50px;margin-bottom:0}
+.footer-links li a{font-family:'Twentieth Century MT Semi Medium';color:#737276;text-decoration:none;font-size:18px;line-height:30PX;display:block;padding-bottom:7px}
+.footer-links li{list-style-type:none}
+.footer-links ul{padding-left:0}
+.third-col{position:relative}
+.third-col:after{position:absolute;content:'';border-right:1px solid #ccc;height:115%;top:-10px;right:100px}
+.footer_contact_info img{max-height:25px}
+.address img{margin-bottom:25px}
+.address p{font-family:'Twentieth Century MT Medium';font-size: 17px;color:#2c2c2c;padding-right: 0px;display:inline-block;margin-bottom: 8px;line-height: 1.4em;width: 80%;}
+.footer_contact_info a{color:#2c2c2c;text-decoration:none;font-family:'twentieth_century_light';font-size:19px;margin-right: 0px;margin-bottom: 8px;display: inline-block;}
+.footer_contact_info a:last-child{margin-right:0}
+.footer_contact_info a i{margin-right:7px}
+.footer_contact_info img{max-height: 23px;margin-right:7px;margin-bottom:0!important;}
+.copyright-content,.copyright-content a{color:#fff;font-size:16px;font-family:'twentieth_century_light';text-decoration:none;text-align: center;}
+.powered-by{text-align:right}
+.txt-center{text-align:center}
+.service_content_block h4{font-size:25px;font-weight:700;color:#8c8c8c}
+.service_content_block h3{font-size:32px;color:#222328;line-height:40px}
+.service_content_block a.read_more{color:#ffffff!important;border-width:0!important;letter-spacing:1px;font-family:'Open Sans',Helvetica,Arial,Lucida,sans-serif!important;font-weight:500!important;text-transform:uppercase!important;background-color:#f37435;box-shadow:6px 6px 18px 0 rgba(243,116,53,0.49);position:relative;padding:.3em 1em;border:2px solid;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;font-size:17px;font-weight:600;line-height:1.7em!important;-webkit-transition:all .2s;-moz-transition:all .2s;transition:all .2s;margin-top:14px;display:inline-block}
+#big .item{margin:0 15px}
+#big .item img{width:auto;height:auto}
+#big .item.society_management_block{background:url(images/society_manage_bg.png) no-repeat right bottom}
+#big .item.society_management_block .et_pb_column_3_5{margin-right:0}
+#big .item.last_block .et_pb_column_3_5{margin-right:0}
+.outer{padding-top:45px!important}
+#big.owl-theme .owl-prev{background:url(../images/left-arrow.jpg) no-repeat;background-size:contain;color:#f07c0000;border:0!important;top:-15%!important;opacity: 0.3;}
+#big.owl-theme .owl-next{background:url(../images/right-arrow.jpg) no-repeat;background-size:contain;color:#f07c0000;border:0!important;top:-15%!important;opacity: 0.3;}
+#big.owl-theme .owl-prev:hover, #big.owl-theme .owl-next:hover { opacity: 1 }
+
+#thumbs .current .item span{color:#24a057}
+.service_img img{width:100%!important;height: 689px!important;object-fit: contain;object-position:center;}
+.service-page-img img, .industry-page .col-md-6 img{
+    max-height: 350px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.detail_section{position:relative;padding-top:50px}
+.number{font-size:150px;color:rgb(251 251 251 / 0%)!important;-webkit-text-stroke:1px #618103;font-family:'Twentieth Century MT Bold Condensed';line-height:130px}
+.service_content_block{padding-left:30px;text-align:left}
+.service_content_block h3{font-family:'Twentieth Century MT Semi Medium';font-size:30px;color:#231f20;text-align:left}
+.service_content_block p{color:#282828;font-size:22px;font-family:'twentieth_century_light';padding-bottom:20px;padding-top:15px;position:relative}
+.read_more_2{transition: all 200ms linear;color:#000000;font-family:'Twentieth Century MT Semi Medium';font-size:20px;border:1px solid #bebebe;border-radius:5px;border-bottom:2px solid #4f484a;text-decoration:none;padding: 15px 59px 15px 25px;position:relative;box-shadow:6px 6px 18px 0 rgb(39 161 89 / 30%);}
+.read_more_2 span{margin-left:10px}
+
+.service_content_block .read_more_2:after { background: url(../images/btn-circle.svg) no-repeat; content: ""; position: absolute; z-index: 999999999;/* top: 12px;*/ right: 20px; width: 30px; height: 30px;}
+.service_content_block .read_more_2:hover:after { background: url(../images/btn-circle-light.svg) no-repeat;}
+.service_content_block .read_more_2:hover { background-color:#11998e; color: #ffffff; border-bottom:2px solid #ffffff; }
+.team-section-content {
+    text-align: center;
+}
+.team{background:url(../images/map-img.png) no-repeat center;background-size:contain}
+.team-section-content h2{font-size:40px;font-family:'Twentieth Century MT Medium Condensed';color:#231f20}
+.team-section-content p{font-size:30px;color:#231f20;font-family:'Twentieth Century MT Semi Medium';margin:30PX 0;line-height: 35px;padding-right: 40px;}
+.team_btn{display: inline-block;border-radius:50px;border:1px solid #212121;color:#212121;font-size:20px;padding:7px 20px;text-decoration:none;font-family:'Twentieth Century MT Medium Condensed'}
+.project{background-image:url(../images/project-bg.jpg);padding-top:100px;padding-bottom:80px;padding-left: 100px;}
+.project_section h3{font-family:'Twentieth Century MT Medium Condensed';color:#231f20;font-size:70px;line-height:55px;}
+.gradient_text{text-transform:uppercase;background:linear-gradient(to right,#35c39f 0%,#19a292 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:'Twentieth Century MT Bold Condensed';font-size:70px}
+.map_section{background-image: linear-gradient(
+180deg
+, #f8fbff, transparent);margin-top: 50px;background-size:100%;padding-top:80px;background-position:top;background-repeat:no-repeat;position:relative}
+.map-image-wrapper{margin-top: 50px;position:relative}.points{position:absolute;background-color:#000;height:13px;width:13px;border-radius:50%;padding:0;display:grid;place-items:center;box-shadow:1px 1px 0 10px #e8edfc9c}
+.points:after{content:'';position:absolute;border:2px solid #0d9752;height:21px;width:21px;border-radius:50%}
+.point1{top:35%;left:13%}.point2{top:38%;left:28%}.point3{top:25%;left:46%}.point4{top:45%;left:15%}
+.point5{top:30%;left:52%}.point6{top:50%;left:18%}.point7{top:50%;left:68%}.point8{top:62%;left:74%}
+.point9{top:34%;left:25%}.point10{top:30%;left:22%}.point11{top:85%;left:88%}.point12{top:47%;left:60%}
+.point13{top:34%;left:31%}.ripple{border-radius:50%;margin:auto;transition:background .5s ease}
+.points:hover{animation:avatar-pulse 2s infinite;transition:background-color .5s;transition:.1s ease all}
+@keyframes avatar-pulse{0%{box-shadow:0 0 0 0 #fff}100%{box-shadow:0 0 0 15px #0d97525c}}
+.map_section img{width:100%}
+.points span{
+    opacity: 0;
+    transition: 0.7s all ease;
+    color: #fff;
+    font-size: 20px;
+    padding: 2px 10px;
+    background: #000;
+    position: absolute;
+    top: -60px;
+    min-width: 120px;
+    border-radius: 5px;
+    font-size: 0px;
+    text-align: center;
+    z-index: 99999999999;
+}
+.points span:after{
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #000000;
+    top: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 AUTO;
+    width: 10PX;
+}
+.points:hover span{
+    opacity: 1;
+      font-size: 20px;
+}
+.team-section-content p {
+    font-size: 30px;
+    color: #231f20;
+    font-family: 'Twentieth Century MT Semi Medium';
+    margin: 30PX 0;
+    line-height: 35px;
+    padding-right: 40px;
+    max-width: 790px;
+    margin: 30px auto;
+}
+.team {
+    background: url(../images/team-background.png) no-repeat center;
+    background-size: 60%;
+    padding: 100px 0;
+    position:relative;
+}
+
+.map_section h3{color:#1a7e43;font-size:40px;text-align:center;font-family:'Twentieth Century MT Semi Bold'}
+.map_section h4{color:#231f20;font-size:35px;text-align:center;font-family:'Twentieth Century MT Semi Medium'}
+.service_btn{background-image: linear-gradient(45deg,#262022,#494748);color:#fff;border-radius:3px;font-size:20px;padding:12px 48px;text-decoration:none;font-family:'Twentieth Century MT Semi Medium';box-shadow:0 6px 18px 0 rgb(22 159 144 / 43%);margin-top:40px;display:inline-block;}
+.service_btn:hover { color: #ffffff }
+.shadow-effect{border-radius:5px;border:1px solid #a0bbff;margin-right:0;box-shadow:6px 6px 18px 0 rgb(39 161 89 / 30%)}
+.title{font-size:24px;color:#231f20;padding:10px 10px 10px 20px;text-align:left;margin-bottom:0;font-family:'Twentieth Century MT Medium'}
+.shadow-effect img{width:100%;max-height:277px;min-height:277px;object-fit:cover}
+.project-carousel .item{padding-bottom:20px}
+#customers-testimonials{.item-detailsbackground-color:#333333;color:#fff;padding:20px 10px;text-align:left;h5margin:0 0 15px;font-size:18px;line-height:18px;spancolor:red;float:right;padding-right:20px}
+.item{text-align:center;margin-bottom: 0px;}
+.project-carousel .item-details p{font-size:18px;color:#282828;font-family:'twentieth_century_light';padding:20px 20px 15px;margin-bottom:0}
+.case_study{color:#0c833d;font-size:18px;font-family:'Twentieth Century MT Bold';text-transform:uppercase;padding:0 20px 20px;display:inline-block}
+.owl-carousel .owl-nav [class*='owl-']{-webkit-transition:all .3s ease;transition:all .3s ease}
+.owl-carousel .owl-nav [class*='owl-'].disabled:hover{background-color:#D6D6D6}
+.owl-carousel{position:relative}
+.owl-carousel .owl-next,.owl-carousel .owl-prev{width:50px;height:50px;line-height:42px;border-radius:50%;position:absolute;top:30%;font-size:20px;color:#fff;border:1px solid #ddd;text-align:center}
+.owl-carousel .owl-prev{left:-70px}
+.owl-carousel .owl-next{right:-70px}
+.border_class{justify-content:flex-end;position:relative}
+.border_class:after{position:absolute;content:'';width:2px;height:70px;background:#e8ebef;right:-3px}
+.search-button button{border:none;background:transparent no-repeat center center/cover;font-size:25px;color:#13272e}
+.search-popup{display:none;position:fixed;top:0;right:0;left:0;bottom:0}
+.search-bg{position:absolute;top:0;right:0;left:0;bottom:0;background-color:rgba(0,0,0,0.5)}
+.search-popup label{color:white}
+.search-form{display:block;margin:0;position:relative;right:-100%;max-width:500px;margin:0 auto}
+.form{position:relative}
+.form input{outline:none;border-width:0 0 1px;border-style:none none solid;border-color:#dad6d5;background-color:transparent;width:100%;padding:1em 0;color:#dad6d5}
+.form input:focus::-webkit-input-placeholder{opacity:0}
+.form input:focus::-moz-placeholder{opacity:0}
+.form input:-ms-input-placeholder{opacity:0}
+.form input:focus:-moz-placeholder{opacity:0}
+.form label{position:absolute;top:25%;right:0}
+.social-media{list-style:none;float:right}
+.social-media li{display:inline-block}
+.social-media li a{text-decoration:none;display:block;padding:1.9em 15px;color:#dad6d5;-webkit-transition:color .6s ease;-moz-transition:color .6s ease;-ms-transition:color .6s ease;-o-transition:color .6s ease;transition:color .6s ease}
+.social-media li a:hover{color:#c14240}
+.list{list-style:none;text-align:center}
+.list li{display:inline-block}
+.list li a{text-decoration:none;display:block;padding:1.9em 15px;color:#dad6d5;text-transform:uppercase;-webkit-transition:color .6s ease;-moz-transition:color .6s ease;-ms-transition:color .6s ease;-o-transition:color .6s ease;transition:color .6s ease}
+.list li a:hover{color:#c14240}
+
+.project-carousel .item-details p {overflow: hidden;text-overflow: ellipsis;display: -webkit-box;padding: 0;margin: 10px 10px 10px 20px;-webkit-line-clamp: 2;-webkit-box-orient: vertical;text-align: center;}#customers-testimonials {padding: 0 0px 0 0;}a {text-decoration: none;}.contact_page_form input, .contact_page_form select, .contact_page_form textarea {padding: 13px;font-size: 20px;width: 100%;border-radius: .25rem;border: 0;}.modal .contact_page_form textarea {max-height: 55px;}.footer_info .address .flag {width: 26px;margin-bottom: 0px;margin-right: 13px;height: 21px;}
+.textarea_height {min-height: 110px!important;}.form-bg input, .form-bg textarea{font-size: 20px;}
+.career-sub-pages .Technology_section{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sub-heading{color:#231f20;font-family:'Twentieth Century MT Medium'}
+.description-box{display:flex;min-height:260px;flex-wrap:wrap;flex-direction:column;justify-content:center}
+.case-study{padding-left:68px;max-width:80rem;width:100%}
+.case-study p{color:#fff}
+.content-block{box-shadow:0 .4rem 1.6rem rgb(0 0 0 / 6%);padding:1.5rem 1.5rem 2.5rem}
+.image-wrapper img{width:100%;min-height:320px;object-fit:cover}
+.spacing-class .row{padding:40px 25px 20px}
+.case-study-grid{margin-bottom:30px}
+.spacing-class .row .col-6,.spacing-class .row .col-4{height:100%}
+.case-study-link{text-decoration:none}
+.content-block h4{color:#231f20;font-family:'Twentieth Century MT Medium';margin-bottom:.5rem}
+.content-block p{font-family:'twentieth_century_light';font-style:normal;font-weight:normal;color:#282828}
+.form-bg{background-color:#f6f8f8;padding:40px 0}
+.form-section{padding-top:30px}
+.form-bg input,.form-bg textarea{border:1px solid #cdd3d8;padding:10px;width:100%;margin-bottom:30px}
+.form-bg textarea{height:150px}
+.form-bg .service_btn{max-width:200px}
+.contact-detail a{display:block;text-decoration:none;color:#2c2c2c}
+.contact-detail a i{color:#30ad6b;font-size:20px;margin-right:10px}
+.contact-detail{padding-top:30px;padding-left:20px}
+.txt-right{text-align:right}
+.related-case-study-section{background-color:#fff;padding:40px 0}
+.case-img img{width:100%}
+.related-case-study-section .col-9{background-color:#fafafa;padding:20px 40px;display:flex;align-items:center}
+
+
+.inner_page_banner .case-study{padding-left:0}
+.related-case-study-section,.bg-clr{background-color:#fff;padding:0}
+.content-block h4{margin-bottom:1em;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.inner_page_banner .case-study h1{text-shadow:none;color:#fff;font-family:'Twentieth Century MT Medium';font-weight:normal;font-size:1.8em}
+.related-case-study-section .case-content-wrapper{text-align:left;padding-left: 30px;}
+.case-img img,.image-wrapper img{min-height:320px;object-fit:cover;width:100%;max-height:320px}
+.related-case-study-section .owl-prev,.related-case-study-section .owl-next{background:#008530;color:#008530;text-decoration:none;border-color:#008530;box-shadow:0 0 1.5rem rgb(0 0 0 / 10%);background-color:hsla(0,0%,100%,.9);border-radius:5rem!important;background-repeat:no-repeat;background-position:50%}
+.related-case-study-section .owl-prev:hover,.related-case-study-section .owl-next:hover{background-color:#27a159!important;border-color:#27a159!important}
+.shadow-effect .title{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;padding:0;margin:10px 10px 10px 20px;-webkit-line-clamp:2;-webkit-box-orient:vertical;text-align:center}
+.search-result-form input{border: 1px solid #383a3c;padding:10px;width:100%;}
+.search-result-form input[type="submit"]{border-color:transparent;border-radius:0}
+.invest-industry img{max-height:100%!important;}
+
+
+
+
+
+
+
+.map-pointers{font-size: 20px;color: #231f20; padding: 10px 10px 10px 20px;text-align: left;width: 100%;min-width: 185px;'Twentieth Century MT Medium Condensed'}
+.project-carousel .owl-carousel .owl-prev i, .project-carousel .owl-carousel .owl-next i{color:#1ca694}
+.owl-carousel .owl-next,.owl-carousel .owl-prev{background-color:#fff}
+.project-carousel .owl-carousel .owl-prev{left:0px;position: absolute;margin: auto;top: 0;bottom: 0;line-height:50px;}
+.project-carousel .owl-carousel .owl-next{right:0!important;position: absolute;margin: auto;top: 0;bottom: 0;line-height:50px;}
+.project-carousel .owl-carousel .owl-prev:hover, .project-carousel .owl-carousel .owl-next:hover{background-color: #029346;}
+.project-carousel .owl-carousel .owl-prev:hover i, .project-carousel .owl-carousel .owl-next:hover i{color: #fff;}
+@media only screen and (max-width:1440px){.detail_section{padding-top:0}.testimonials .container{max-width:100%}.gradient_text {font-size: 55px;}
+.project{padding:0  0 0px 25px}.project_section h3{font-size:75px}.team{min-height:auto;background-size:100%}.address p{padding-left:15px;width:85%}
+.footer_info .address .flag{margin-right:0}.third-col:after{right:50px}.container,.footer .bottom .container,.footer .container{max-width:86%}
+.og-grid li{width:31.3%}}@media only screen and (max-width:1366px){
+    #thumbs .item li span{width:100px;}#big .owl-stage-outer{padding-bottom:30px;}.service_img img{height:400px!important;}.service_content_block h3{font-size:28px}#big .item.society_management_block img{width:90%}
+#big .item.society_management_block{background-size:81%}#big.owl-theme .owl-next,#big.owl-theme .owl-prev{margin-top:-40px!important}.og-grid li h6{font-size:18px}
+.career-text{width:100%!important;}}@media only screen and (max-width:1280px){
+    .navbar-expand-lg .navbar-nav .nav-link{padding:0 15px;font-size:22px}
+    .header .navbar-expand-lg .navbar-nav .nav-link:hover:before,.navbar-expand-lg .navbar-nav .active:before{left:-10px}
+    .Technology_section h2,.map_section h3,.services h3,.team-section-content h2{font-size:40px}
+    .Banner p,.Technology_section h3,.about_content h3,.map_section h4,.services h4,.team-section-content p{font-size:25px}.about_content p,.why_us p{font-size:17px}
+    .about_content p{padding:20px 0}.about_section{padding:64px 20px}.services{padding-top:0}#big .owl-stage-outer{padding-bottom:30px}.service_btn{margin-top:20px}
+    .project_section h3{font-size:50px;line-height:55px}.project .row{align-items:center}.technology_buttons a{display:inline-block;margin:30px 10px}
+    .third-col:after{display:none}}@media only screen and (max-width:1260px){.service_content_block{margin-top:2%}.service_content_block h3{font-size:25px}
+    #big.owl-theme .owl-next,#big.owl-theme .owl-prev{margin-top:-48px!important}.career-text{width:100%!important;font-size:1.5rem!important;line-height:2rem!important}}
+    @media only screen and (min-device-width :1000px) and (max-device-width :1199px){.service_content_block h3{font-size:22px}.contact_block{padding:1.5rem 5px!important}
+    .contact_block h4{font-size:24px}}@media only screen and (max-width:980px){.inner_page_banner .banner-height{height:32vh}.case-content-wrapper{padding-left:20px}
+    .case-content-wrapper .sub-heading{padding-top:20px}. display-5{font-size:calc(1.425rem + 1.1vw);font-weight:500}.Banner h3{margin-bottom:15px;font-size:40px;line-height:40px}
+    .og-grid li h4{font-size:21px}.og-grid li{width:45.3%}.contact_block h4{font-size:23 px}
+    #big .col-md-6,.about_section .col-md-6,.full-width-service .col-6,.project .col-md-4,.project .col-md-8,.responsive-full-width{width:100%}
+    #why-choose .col-md-6,.three-column-grid .col-6{width:100%}.about_content h3{padding-top:30px}.services .w-75{width:100%!important}#thumbs{display:none}
+    .service_content_block p{padding:0}#big .read_more_2{display:inline-block}.services h3{font-size:30px;margin-bottom:.5rem}.service_content_block{padding-left:0}
+    #big.owl-theme .owl-next,#big.owl-theme .owl-prev{top:15%!important}#big.owl-theme .owl-next{right:-65px}#big.owl-theme .owl-prev{left:-35px}
+    #big.owl-theme .owl-next,#big.owl-theme .owl-prev{margin-top:0!important}.service_btn{margin-top:0}.project,.team{padding:25px}
+    .project .col-sm-12,.project .container{padding:0}.Technology_section{padding-top:30px}.responsive-half-width{width:50%}
+    .project-carousel .item{background-color:#fff}.team_btn{display:inline-block}.contact_block{padding:1.5rem 5px!important}
+    .contact_info{transform:translate(0,2%)}.contact-detail{padding-left:0}.contact-detail a i{color:#30ad6b;font-size:15px;margin-right:-1px}
+    .contact-detail a{font-size:15px}.content-block{box-shadow:0 .4rem 1.6rem rgb(0 0 0 / 6%);padding:15px 15px 25px}}
+    @media only screen and (max-width:768px){.case-content-wrapper{padding-left:0}.row-eq-height{display:block}#technology-stack .row-eq-height{display:flex}
+    .custom_row{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap}
+    .first-on-mobile{-webkit-order:1;order:1;width:100%}.second-on-mobile{-webkit-order:2;order:2;width:100%}
+    .third-on-mobile{-webkit-order:3;order:3;width:100%}.fourth-on-mobile{-webkit-order:4;order:4;width:100%}.navbar-expand-lg .navbar-nav .nav-item{padding:5px}
+    .navbar-expand-lg .navbar-nav{width:97%;justify-content:center;margin:10px}}
+    @media only screen and (max-width:767px){.Banner .d-none{display: block!important;}
+     .Banner .button-section, .Banner p{display: none;}.service_img img { height: auto!Important;}
+     .Banner h3{font-size: 25px!important;line-height: 25px;}.job-form input{margin-bottom: 15px;}.job-detail-page .container{max-width:100%;padding:0;}.job-detail .text-center, .location.text-center{text-align: left!important;}.job-list .container{padding:0;max-width:100%;}.job-page  .col-2{display: none;} .job-page  .col-8 {width: 100%;max-widt:100%;}.job-list .txt-right {
+    text-align:left;border-left: 0px solid #ccc;}.job-list .service_btn{margin-top: 25px;}.case-study h1{font-size:24px!important;padding-top:0!important}
+    .career-text{width:100%!important;font-size:1.3rem!important}.responsive-half-width{width:100%}.career-text{font-size:1.3rem!important;line-height:2rem!important}
+    .career-page .mb-5{margin-bottom:0!important}.career-page .mt-5{margin-top:1rem!important}.responsive-full-width .col-12:last-child h3{display:none}
+    .footer-links ul{margin-bottom:0}.shape:after,.shape:before{display:none}.responsive-full-width .col-12:last-child ul{margin-bottom:20px}
+    .footer .container,.map_section{padding:30px 0}.address p{width:85%}
+    .services .w-75{padding:0!important}.Technology_section h2,.map_section h3,.services h3,.team-section-content h2{font-size:35px}.map_section{min-height:auto}
+    .gradient_text{font-size:55px}.team-section-content p{margin:0 0 20px 0}.technology_buttons a{display:block;margin:10px}.inner_page_container .row{padding:10px}
+    .og-grid li{width:100%}.contact_page_form .row{margin-bottom:0}.contact_page_form button,.contact_page_form input,.contact_page_form textarea{margin-bottom:20px}
+    .owl-carousel .owl-next,.owl-carousel .owl-prev{width:30px;height:30px;line-height:25px}.owl-carousel .owl-next{right:-40px}.owl-carousel .owl-prev{left:-40px}}
+    @media only screen and (max-width:480px){..map-image-wrapper{margin-top:30px;}.points{height: 6px;width:6px;box-shadow:none;}
+    .points:after{height: 10px;width: 10px;border-width:1px;}.map_section .container{max-width:100%}.map_section{margin-top:0}.project-carousel .owl-carousel .owl-prev{left:0%;}.project-carousel .owl-carousel .owl-next{right:0%!important;}
+    .project-carousel .owl-carousel .owl-next,.project-carousel .owl-carousel .owl-prev{line-height:30px}#big.owl-theme .owl-next{right:-35px}
+    #big.owl-theme .owl-next,#big.owl-theme .owl-prev{top:30%!important}#big.owl-theme .owl-prev{left:-10px}.technology_buttons a{font-size:20px;padding:8px 5px}
+    .Banner p,.Technology_section h3,.about_content h3,.map_section h4,.services h4,.team-section-content p{font-size:22px}
+    .Technology_section h2,.map_section h3,.services h3,.team-section-content h2{font-size:30px}.project_section h3{font-size:45px;line-height:45px}
+    .gradient_text{font-size:34px}.service_btn{padding:12px 30px}.copyright-content,.copyright-content a,.powered-by{text-align:center}
+    .three-column-grid .three-column-grid-inner{padding:1rem}body{font-size:20px}.inner_page_banner .banner-height{height:30vh}
+    .inner_page_banner .banner-height h1{font-size:1.8em;line-height:1.1em;padding-top:20px}.case-img img,.image-wrapper img{min-height:auto}
+    .contact_page_form .submit-bt{width:100%;padding:11px 5px}.social i{width:30px;height:30px;font-size:15px;padding-top:9px}}
+    @media only screen and (max-width:425px){.service_content_block h3{font-size:23px}#big.owl-theme .owl-prev{left:-10px!important}.inner_page_container h2{font-size:1.3em}}
+
+.footer_info .address .flag{
+    margin-top:6px;
+}

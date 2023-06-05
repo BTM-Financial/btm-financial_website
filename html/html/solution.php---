@@ -1,0 +1,237 @@
+<?php $currentpage = "solution"; ?>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <?php include 'head.php';?>
+</head>
+  <?php include 'header.php';?>
+  <div id="butter">
+  <section class="inner_page_banner" style="background-image: url(images/banner/banner-casestudy.webp);">
+  <div class="container">
+    <div class="row vertical_align banner-height">
+      <div class="col-12">
+        <h5>Solutions</h5>
+        <div class="clearfix"></div>
+        <h1>Solutions for big industries</h1> </div>
+    </div>
+  </div>
+  <div class="container inner_page_container">
+
+
+<div class="row" >
+
+<!--Industry start here -->
+<div class="row border-bottom pb-5">
+  <div class="col-6">
+    <h3 class="h2">Commercial and Investment Banks</h3>
+    <div class="half_divider"></div>
+    <p>BTM Financial provides comprehensive bespoke solutions to Commercial & Investment Banks combining cutting-edge Analytical Solutions with Technology.</p>
+    <ul>
+      <li>Bond Analytics & Deal Structuring</li>
+      <li>Corporate Finance Valuation</li>
+      <li>Data Mining & Cleansing</li>
+      <li>Credit & Equity Research</li>
+      <li>Operating models, DCF models, LBO models, merger models.</li>
+      <li>Relative valuation models </li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+  <div class="col-6"> fgfdgfd
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!--Industry ends here -->
+
+<!--Industry start here -->
+ <div class="row border-bottom pt-5 pb-5 custom_row">
+  <div class="col-6 second-on-mobile"> fgfdgfd
+    <div class="clearfix"></div>
+  </div>
+  <div class="col-6 first-on-mobile">
+    <h3 class="h2">Asset Management Companies</h3>
+    <div class="half_divider"></div>
+    <p>In today’s complex marketplace, even sophisticated investors are challenged to stay current and to respond to rapidly changing conditions. Our customized Asset Management Software supports you in several ways which include improving operational efficiency, achieving economy of scale, and controlling running costs.</p>
+    <ul>
+      <li>Asset Summary Reports</li>
+      <li>Developing a Strategic Asset  Management Plan</li>
+      <li>Performance Attribution Analysis</li>
+      <li>Data Processing &amp; Tabulation</li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!--Industry ends here -->
+
+<!--Industry start here -->
+<div class="row border-bottom pb-5 pt-5">
+  <div class="col-6">
+    <h3 class="h2">Accounting Firms</h3>
+    <div class="half_divider"></div>
+    <p>We assist Accounting Firms with advanced Analytics of Data, Regulatory Solutions, Income statement, and statement of cash flows.</p>
+    <ul>
+      <li>Financial  Statement Analysis</li>
+      <li>Advanced  Business Intelligence Solutions</li>
+      <li>CCAR, FRTB,  BASAL Regulations and Reporting</li>
+      <li>Back Office  Support</li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+  <div class="col-6"> fgfdgfd
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!--Industry ends here -->
+
+<!--Industry start here -->
+ <div class="row border-bottom pt-5 pb-5 custom_row">
+  <div class="col-6 second-on-mobile"> fgfdgfd
+    <div class="clearfix"></div>
+  </div>
+  <div class="col-6 first-on-mobile">
+    <h3 class="h2">Special Servicers</h3>
+    <div class="half_divider"></div>
+    <p>We provide tailored Collateral Management services for assets including risk management, surveillance, and reporting. We are focused on creative and efficient solutions for our partners.</p>
+    <ul>
+      <li>SS Fee  Projection</li>
+      <li>Asset  Surveillance &amp; Reporting</li>
+      <li>Collateral  Management Solutions</li>
+      <li>Risk Management  Support</li>
+      <li>Loan Analysis  &amp; Performance Management</li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!--Industry ends here -->
+
+
+<!--Industry start here -->
+<div class="row border-bottom pb-5 pt-5">
+  <div class="col-6">
+    <h3 class="h2">Private Equity &amp; Venture Capital Firms</h3>
+    <div class="half_divider"></div>
+    <p>BTM Financial provides end to end Fund Management support to Venture Capital Funds as well as Private Equity Firms</p>
+    <ul>
+      <li>Due Diligence  &amp; Data Integration</li>
+      <li>Software  solutions for Portfolio Management </li>
+      <li>Investment  Compliance</li>
+      <li>Capital Market  Technology Solutions</li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+  <div class="col-6"> fgfdgfd
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!--Industry ends here -->
+
+<!--Industry start here -->
+ <div class="row border-bottom pt-5 pb-5 custom_row">
+  <div class="col-6 second-on-mobile"> fgfdgfd
+    <div class="clearfix"></div>
+  </div>
+  <div class="col-6 first-on-mobile">
+    <h3 class="h2">Hedge Funds</h3>
+    <div class="half_divider"></div>
+    <p>We are a dedicated hedge fund solutions provider, have been evaluating and analyzing for many years.</p>
+    <ul>
+      <li>Analytics &amp;  Trading Support</li>
+      <li>Cash Flow  Analysis</li>
+      <li>Sensitivity  Analysis</li>
+      <li>Deal Structuring</li>
+      <li>Investor  Management &amp; Periodic Reporting</li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!--Industry ends here -->
+
+
+
+<!--Industry start here -->
+<div class="row border-bottom pb-5 pt-5">
+  <div class="col-6">
+    <h3 class="h2">Insurance Companies</h3>
+    <div class="half_divider"></div>
+    <p>BTM Financial provides bespoke Insurance Analytics Services, working alongside your team to help efficiently implement and seamlessly integrate our Techno-Analytics solutions into your existing framework.</p>
+    <ul>
+      <li> Property Underwriting  Risk Management &amp; Reporting  Actuarial Analytics  Data Mining &amp; Cleansing </li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+  <div class="col-6"> fgfdgfd
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!--Industry ends here -->
+
+<!--Industry start here -->
+ <div class="row border-bottom pt-5 pb-5 custom_row">
+  <div class="col-6 second-on-mobile"> fgfdgfd
+    <div class="clearfix"></div>
+  </div>
+  <div class="col-6 first-on-mobile">
+    <h3 class="h2">Institutional Investors</h3>
+    <div class="half_divider"></div>
+    <p>We work with a diverse set of clients, including pension funds, endowments and foundations, and sovereign wealth funds. BTM Financial is the leading Independent Analytics institution, providing cutting edge cross-asset services for valuation &amp; portfolio management of various Financial Instruments. We are dedicated to helping you maximize your Investment Value.</p>
+    <ul>
+      <li>The investment  strategy and value creation</li>
+      <li>Asset  Profiling/Benchmarking</li>
+      <li>Portfolio  Performance Monitoring and Value Enhancement</li>
+      <li>Waterfall  distribution Models</li>
+      <li>Acquisition  Support</li>
+      <li>Due diligence  and portfolio management</li>
+      <li>Support  functions</li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!--Industry ends here -->
+
+
+
+<!--Industry start here -->
+<div class="row pb-5 pt-5">
+  <div class="col-6">
+    <h3 class="h2">Real Estate Companies</h3>
+    <div class="half_divider"></div>
+    <p>BTM Financial comprises seasoned Real Estate professionals having deep expertise in this domain with a background in Technology which enables us to provide our clients with an efficient solution.</p>
+    <ul>
+      <li>Full-Service  Underwriting</li>
+      <li>B-Piece Due  Diligence</li>
+      <li>Lease Abstraction</li>
+      <li>Loan Sizing  &amp; Origination Support</li>
+      <li>Financial  Statement Analysis</li>
+      <li>Argus Modelling/DCF</li>
+      <li>Valuation  and&amp; Scenario Analysis</li>
+      <li>Preliminary,  operational, and commercial due diligence</li>
+      <li>Pipeline  Management System </li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+  <div class="col-6"> fgfdgfd
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!--Industry ends here -->
+
+
+</div>
+
+
+
+
+
+
+
+
+    <div class="clearfix"></div>
+    </div>
+</section>
+
+<?php include 'footer-template.php';?>
+</div>
+</body>
+<?php include 'footer.php';?>
+</html>

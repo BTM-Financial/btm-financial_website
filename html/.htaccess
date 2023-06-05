@@ -1,0 +1,23 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteCond %{THE_REQUEST} ^.*/index.php
+RewriteRule ^(.*)index.php$ https://btm-financial.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^https://btm-financial.com/$
+RewriteRule ^$ https://btm-financial.com/ [L,R=301]
+
+RewriteRule  ^about-btm/?$  about-btm.php [NC,L]
+RewriteRule  ^industries/?$  industries.php [NC,L]
+RewriteRule  ^life-at-btm/?$  life-at-btm.php [NC,L]
+RewriteRule  ^we-aim-for-the-stars/?$  we-aim-for-the-stars.php [NC,L]
+RewriteRule  ^contact-us/?$  contact-us.php [NC,L]
+RewriteRule  ^search/?$  search.php [NC,L]
+RewriteRule  ^terms-of-use/?$  terms-of-use.php [NC,L]
+RewriteRule  ^privacy-policy/?$  privacy-policy.php [NC,L]
+RewriteRule  ^thankyou/?$  thank-you.php [NC,L]
+
+RewriteRule  ^service/([A-Za-z0-9-]+)/?$  service.php?serviceId=$1 [NC,L]
+RewriteRule  ^solutions/?$  solutions.php [NC,L]
+RewriteRule  ^solution/([A-Za-z0-9-]+)/?$  solution-detail.php?solutionId=$1 [NC,L]
+RewriteRule  ^job-openings/?$  job-openings.php [NC,L]
+RewriteRule  ^career/([A-Za-z0-9-]+)/?$  career-detail.php?careerId=$1 [NC,L]
